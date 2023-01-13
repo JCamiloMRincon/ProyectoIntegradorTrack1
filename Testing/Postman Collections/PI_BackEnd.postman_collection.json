@@ -1,0 +1,1321 @@
+{
+	"info": {
+		"_postman_id": "f8d692eb-4654-43ae-8d87-9d613d207d60",
+		"name": "PI_BackEnd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18651900"
+	},
+	"item": [
+		{
+			"name": "Listar categorías",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que Departamento tenga id 3\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[2].titulo).to.eql(\"Departamento\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Validar que Cabaña tenga id 2\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[1].titulo).to.eql(\"Cabaña\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que Casa tenga id 4\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[3].titulo).to.eql(\"Casa\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar ciudades",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que Bogotá tenga id 1\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].nombre).to.eql(\"Bogotá\");\r",
+							"});\r",
+							"pm.test(\"Response time is less than 2500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2500);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Medellín\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Cali\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Santa Marta\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/ciudades",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"ciudades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar paises",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que Argentina tenga id 1\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].nombre).to.eql(\"Argentina\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/paises",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"paises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar caracteristicas",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que Wifi tenga id 1\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].nombre).to.eql(\"Wifi\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/caracteristicas",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"caracteristicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar politicas",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/politicas",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"politicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar imagenes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/imagenes",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"imagenes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar politicas/ tipos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que Normas de la casa tenga id 1\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].descripcion).to.eql(\"Normas de la casa\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que Política de cancelación tenga id 2\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[1].descripcion).to.eql(\"Política de cancelación\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Validar que Salud y seguridad tenga id 3\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[2].descripcion).to.eql(\"Salud y seguridad\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/politicas/tipos",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"politicas",
+						"tipos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar productos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar usuarios",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que usuario Marisabel tenga id 1\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].nombre).to.eql(\"Marisabel\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"camilo@mortigo.com\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"marisabel@albarracin.com\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"juan@luque.com\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar reservas",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/reservas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar categoría por id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/categorias/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"categorias",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar producto por id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 3500\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3500);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/productos/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"productos",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar producto por ciudad",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/productos/ciudad/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"productos",
+						"ciudad",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar producto por categoría",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/productos/categoria/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"productos",
+						"categoria",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar usuarios por ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/usuarios/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"usuarios",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar reserva por ID de producto",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/reservas/producto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"reservas",
+						"producto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar categoría",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \r\n        \"titulo\": \"Habitación compartida\",\r\n        \"descripcion\": \"Los huéspedes duermen en una habitación o área común que podrían compartir con otras personas\",\r\n        \"urlimagen\": \"https://0521ptc2n2-grupo10-front-images.s3.us-east-2.amazonaws.com/Imagenes/Hab-compartida/hab-compartida.jpeg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar producto",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Producto de prueba\",\r\n    \"categoriaId\": \"1\",\r\n    \"direccion\": \"Direccion de prueba\",\r\n    \"ciudadId\": \"1\",\r\n    \"descripcion\": \"Descripcion de prueba\",\r\n    \"disponible\": true,\r\n    \"imagenes\": [\r\n        {\r\n            \"url\": \"urldeprueba\"\r\n        }\r\n    ],\r\n    \"caracteristicas\": [\r\n        {\r\n            \"id\": \"4\"\r\n        }\r\n    ],\r\n    \"politicas\": [\r\n        {\r\n            \"id\": \"2\"\r\n        },\r\n        {\r\n            \"nombre\": \"Politica de prueba\",\r\n            \"tipoPoliticaId\": \"1\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar ciudad",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cityName\": \"Sanra fe\",\r\n    \"countryName\": \"Argentina\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/ciudades",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"ciudades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar pais",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Marruecos\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/paises",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"paises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar caracteristica",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"nombre\": \"Estacionamiento gratuito en la calle\",\r\n        \"urlicono\": \"https://0521ptc2n2-grupo10-front-images.s3.us-east-2.amazonaws.com/Imagenes/FeaturesIcons/parking.png\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/caracteristicas",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"caracteristicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar politica",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"policyName\": \"Check-in: De 15:00 a 20:00\",\r\n    \"policyType\": \"Normas de la casa\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/politicas",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"politicas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar reserva",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdWFuQGx1cXVlLmNvbSIsImV4cCI6MTY3MzU0NzU1MiwibmFtZSI6Ikp1YW4gTHVxdWUifQ.PSdnBy4jEzypPirrTZu-V3DSjWBe79cdvmgQ7_BteGc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"horaInicial\": \"1970-01-01T16:00:00.000+00:00\",\r\n    \"fechaInicial\": \"2023-07-01\",\r\n    \"fechaFinal\": \"2023-07-10\",\r\n    \"productoId\": 2,\r\n    \"usuarioId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/reservas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login admin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"camilo@mortigo.com\",\r\n    \"contrasenia\": \"camilomortigo123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login usuario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"juan@luque.com\",\r\n    \"contrasenia\": \"juanluque123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar usuario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"nombre\": \"Maria\",\r\n        \"apellido\": \"Perez\",\r\n        \"email\": \"maria@perez.com\",\r\n        \"contrasenia\": \"123456\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar categoría",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"id\": 42,\r\n        \"titulo\": \"Habitación compartida\",\r\n        \"descripcion\": \"Los huéspedes duermen en una habitación o área común que podrían compartir con otras personas\",\r\n        \"urlimagen\": \"https://0521ptc2n2-grupo10-front-images.s3.us-east-2.amazonaws.com/Imagenes/Hab-compartida/hab-compartida.jpeg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar producto",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 19,\r\n    \"titulo\": \"Producto de prueba\",\r\n    \"categoriaId\": \"1\",\r\n    \"direccion\": \"Direccion de prueba\",\r\n    \"ciudadId\": \"1\",\r\n    \"descripcion\": \"Descripcion de prueba\",\r\n    \"disponible\": true,\r\n    \"imagenes\": [\r\n        {\r\n            \"url\": \"urldeprueba\"\r\n        }\r\n    ],\r\n    \"caracteristicas\": [\r\n        {\r\n            \"id\": \"4\"\r\n        }\r\n    ],\r\n    \"politicas\": [\r\n        {\r\n            \"id\": \"2\"\r\n        },\r\n        {\r\n            \"nombre\": \"Politica de prueba\",\r\n            \"tipoPoliticaId\": \"1\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar producto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/productos/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"productos",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar categoría",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYW1pbG9AbW9ydGlnby5jb20iLCJleHAiOjE2NzM0ODY0OTcsIm5hbWUiOiJDYW1pbG8gTW9ydGlnbyJ9.HH-Y9Ct6cEM0X07k6vIU-6KIDCZPZjvUUj98_-4ExDY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/categorias/43",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"categorias",
+						"43"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

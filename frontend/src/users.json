@@ -1,0 +1,44 @@
+[
+	{
+		"firstName": "Juan",
+		"lastName": "Luque",
+		"email": "juan@luque.com",
+		"password": "juanluque123",
+		"isActive": true
+	},
+	{
+		"firstName": "Brenda",
+		"lastName": "Montero",
+		"email": "brenda@montero.com",
+		"password": "brendamontero123",
+		"isActive": "false"
+	},
+	{
+		"firstName": "Nicolas",
+		"lastName": "Romero",
+		"email": "nicolas@romero.com",
+		"password": "nicolasromero123",
+		"isActive": true
+	},
+	{
+		"firstName": "Marisabel",
+		"lastName": "Albarracin",
+		"email": "marisabel@albarracin.com",
+		"password": "marisabelalbarracin123",
+		"isActive": "false"
+	},
+	{
+		"firstName": "Natalia",
+		"lastName": "Ortiz",
+		"email": "natalia@ortiz.com",
+		"password": "nataliaortiz123",
+		"isActive": true
+	},
+	{
+		"firstName": "Camilo",
+		"lastName": "Mortigo",
+		"email": "camilo@mortigo.com",
+		"password": "camilomortigo123",
+		"isActive": "false"
+	}
+]

@@ -1,0 +1,26 @@
+[
+	{
+		"id": "1",
+		"title": "Habitación compartida",
+		"description": "Los huéspedes duermen en una habitación o área común que podrían compartir con otras personas",
+		"urlimage": "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?cs=srgb&dl=pexels-m%26w-studios-90317.jpg&fm=jpg"
+	},
+	{
+		"id": "2",
+		"title": "Cabaña",
+		"description": "Espacio ideal para compartir en familia y disfrutar de la naturaleza",
+		"urlimage": "https://images.pexels.com/photos/2360673/pexels-photo-2360673.jpeg?auto=compress&cs=tinysrgb&w=600"
+	},
+	{
+		"id": "3",
+		"title": "Departamento",
+		"description": "Suele incluir un dormitorio, un cuarto de baño, una cocina y una entrada independiente solo para huéspedes",
+		"urlimage": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571460.jpg&fm=jpg"
+	},
+	{
+		"id": "4",
+		"title": "Casa",
+		"description": "Tendrás todo el espacio disponible para ti y tu familia",
+		"urlimage": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?cs=srgb&dl=pexels-binyamin-mellish-106399.jpg&fm=jpg"
+	}
+]

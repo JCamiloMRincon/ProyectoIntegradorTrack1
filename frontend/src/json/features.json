@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "image": "https://www.flaticon.com/free-icon/stove_3091242?term=kitchen&page=1&position=4&page=1&position=4&related_id=3091242&origin=style ",
+    "name": "Cocina"
+  },
+  {
+    "id": "2",
+    "image": "https://www.flaticon.com/free-icon/stove_3091242?term=kitchen&page=1&position=4&page=1&position=4&related_id=3091242&origin=style",
+    "name": "Televisor"
+  },
+  {
+    "id": "3",
+    "image": "https://www.flaticon.com/free-icon/stove_3091242?term=kitchen&page=1&position=4&page=1&position=4&related_id=3091242&origin=style",
+    "name": "Aire acondicionado"
+  },
+  {
+    "id": "4",
+    "image": "https://www.flaticon.com/free-icon/stove_3091242?term=kitchen&page=1&position=4&page=1&position=4&related_id=3091242&origin=style",
+    "name": "Apto mascotas"
+  },
+  {
+    "id": "5",
+    "image": "https://www.flaticon.com/free-icon/stove_3091242?term=kitchen&page=1&position=4&page=1&position=4&related_id=3091242&origin=style",
+    "name": "Estacionamiento gratuito"
+  },
+  {
+    "id": "6",
+    "image": "https://www.flaticon.com/free-icon/stove_3091242?term=kitchen&page=1&position=4&page=1&position=4&related_id=3091242&origin=style",
+    "name": "Pileta"
+  },
+  {
+    "id": "7",
+    "image": "https://www.flaticon.com/free-icon/stove_3091242?term=kitchen&page=1&position=4&page=1&position=4&related_id=3091242&origin=style",
+    "name": "Wifi"
+  }
+]

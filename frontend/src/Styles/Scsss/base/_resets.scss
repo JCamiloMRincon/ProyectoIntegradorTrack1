@@ -1,0 +1,220 @@
+@import '../abstracts/variables';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: $linksColor;
+    text-decoration: none;
+}
+
+label{
+    height: 21px;
+    width: 218px;
+    left: 0px;
+    top: 0px;
+    border-radius: nullpx;
+
+}
+//Plantilla de botones
+.buttonPrimary{
+    height: 40px;
+    width: 206px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+
+    background: $mainColor;
+    color: $backGroundColor;
+
+    box-shadow: $boxShadow;
+    border-radius: 5px;
+
+    font-family:var(--font-roboto);
+    border: none;
+}
+
+.buttonPrimary:hover{
+    background-color: #545776;
+    cursor:pointer ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.buttonSecondary{
+    height: 40px;
+    width: 296px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    
+    background: $mainColor;
+    box-shadow: $boxShadow;
+    color: $backGroundColor;
+    border-radius: 5px;
+
+
+    font-family:var(--font-roboto);
+}
+
+.buttonTthird{
+    height: 40px;
+    width: 206px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    padding: 10px;
+
+    border: 1px solid #1DBEB4;
+
+    color: $mainColor;
+
+    background: $backGroundColor;
+    box-shadow: $boxShadow;
+    border-radius: 5px;
+
+    font-family:var(--font-roboto);
+}
+
+.buttonTthird:hover{
+    background-color: $mainColor;
+    color: $backGroundColor;
+    cursor:pointer ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+//Plantilla de Inputs
+.inputPrimary{
+    width: 300px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+
+}
+
+.inputTextSecondary{
+    width: 300px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+
+}
+
+.inputTextSecondary:hover{
+    background-color: aquamarine;
+    cursor:pointer ;
+}
+//Plantilla de header
+.header{
+    background-color: $backGroundColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+    z-index: 10;
+}
+
+option{
+    width: 300px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+}
+
+//Plantilla menu hamburguesa
+.hamburgerMenu{
+    display: block;
+}
+
+//
+.menu{
+    display: flex;
+    flex-direction: row;
+    input{
+        margin: 0px 5px 0px 5px;
+    }
+
+}
+
+//Plantilla de info usuario
+.infoUser{
+    width: 200px;
+    display: flex;
+    justify-content: end;
+    .iconInfoUser{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin: 10px;
+        background-color: $linksColor;
+        color: white;
+        border-radius: 50%;
+        width: 37px;
+        height: 37px;
+        margin: 10px;
+    }
+    .greetingUser{
+    margin: 10px;
+    display: grid;
+    width: 120px;
+    color: $linksColor;
+    }
+    a{position: absolute;
+        img{
+            width: 10px;
+            color: $linksColor;
+        }
+    }
+}
+//plantilla container logo
+.slogan{
+    margin-left: 10px;
+}
+
+//Plantilla footer
+.footer{
+    background-color: $mainColor;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    height: 58px;
+    z-index: 2;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer li{
+    margin: 0px 10px;
+}
+//Plantilla body
+@media only  screen and (max-width: 412px) and (min-width: 300px) {
+    .footer ul{
+        display: none;
+    }
+}

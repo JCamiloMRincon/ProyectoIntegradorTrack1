@@ -1,0 +1,61 @@
+@mixin flex ($direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap
+}
+@mixin flex ($direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap
+}
+
+@mixin Mq($media) {
+    @if type-of($media)==number {
+        @if unitless($media) {
+            @media only screen and (max-width: $media + px) {
+                @content;
+            }
+        }
+    }
+    @else {
+        @if type-of(map-get($mediaqueries, $media))==number {
+            @media only screen and (max-width: map-get($mediaqueries, $media) + px) {
+                @content;
+            }
+        }
+
+        @else if type-of(map-get($mediaqueries, $media))==string {
+            @media #{map-get($mediaqueries,$media)} {
+                @content;
+            }
+        }
+    }
+}
+
+// MEDIAQUERIES
+@mixin mq($media) {
+    @if type-of($media)==number {
+        @if unitless($media) {
+            @media only screen and (min-width: $media + px) {
+            @content;
+        }
+        }
+    }
+    @else {
+        @if type-of(map-get($mediaqueries, $media))==number {
+            @media only screen and (min-width: map-get($mediaqueries, $media) + px) {
+            @content;
+        }
+    }
+    @else if type-of(map-get($mediaqueries, $media))==string {
+            @media #{map-get($mediaqueries,$media)} {
+                @content;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,98 @@
+@import '../../../Styles/Scsss/abstracts/extends';
+
+.calendar-container {
+    box-shadow: $boxShadow;
+}
+.react-datepicker {
+    font-family: var(--font-roboto);
+    border: none;
+}
+
+.react-datepicker-popper[data-placement^=bottom] {
+    padding-top: 20px;
+}
+
+.react-datepicker__header {
+    background-color: white;
+    border-bottom: none;
+    @extend %h4;
+    padding: 0;
+}
+
+.react-datepicker__navigation-icon::before {
+    border-color: #666666;
+}
+
+.react-datepicker__day {
+    @extend %p2;
+    font-weight: 500;
+    margin: 5px;
+    color: #31363F;
+}
+
+.react-datepicker__day-name {
+    color: $linksColor;
+    margin: 5px;
+}
+
+.react-datepicker__current-month {
+    text-transform: capitalize;
+    margin: 10px;
+}
+.react-datepicker__month-container {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--in-range,
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected:hover,
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--in-range:hover {
+    border-radius: 50%;
+    background-color: $mainColor;
+    color: #FFFFFF;
+}
+
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+    background-color: $mainColor;
+    opacity: 0.5;
+}
+.react-datepicker__day--today {
+    font-weight: bold;
+}
+.react-datepicker__day--disabled,
+.disabled-date {
+    color: #BEBEBE;
+    font-weight: 900;
+    text-decoration-line: line-through;
+}
+.react-datepicker-ignore-onclickoutside {
+    @extend %h4;
+    color: $iconesColor;
+}
+.react-datepicker-popper[data-placement=bottom-end] .react-datepicker__triangle, .react-datepicker-popper[data-placement=top-end] .react-datepicker__triangle, .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after {
+    display: none;
+}
+
+//Laptop
+@media only screen and (min-width: 821px) {
+    .react-datepicker__navigation + .react-datepicker__month-container {
+        border-right: 1px solid #A8A8A8;
+    }
+}
+
+//Tablet
+@media only screen and (max-width: 820px) and (min-width: 426px) {
+    .react-datepicker__navigation + .react-datepicker__month-container {
+        border-right: 1px solid #A8A8A8;
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 425px) and (min-width: 300px) {
+    .react-datepicker__navigation + .react-datepicker__month-container {
+        border-right: none;
+    }
+}

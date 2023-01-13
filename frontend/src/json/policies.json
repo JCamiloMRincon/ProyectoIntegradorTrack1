@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "name": "Normas de la casa",
+    "policies": [
+      {
+        "id": "1",
+        "description": "Check-out: 10:00"
+      },
+      {
+        "id": "2",
+        "description": "No se permiten fiestas"
+      },
+      {
+        "id": "3",
+        "description": "No fumar"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Salud y seguridad",
+    "policies": [
+      {
+        "id": "1",
+        "description": "Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus"
+      },
+      {
+        "id": "2",
+        "description": "Detector de humo"
+      },
+      {
+        "id": "3",
+        "description": "Depósito de seguridad"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Política de cancelación",
+    "policies": [
+      {
+        "id": "1",
+        "description": "Agregá las fechas de tu viaje para obtener los detalles de cancelación de esta estadía"
+      }
+    ]
+  }
+]

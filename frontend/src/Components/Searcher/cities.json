@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"name": "Bogota",
+		"country": "Colombia"
+	},
+	{
+		"id": 2,
+		"name": "Medellin",
+		"country": "Colombia"
+	},
+	{
+		"id": 3,
+		"name": "Buenos Aires",
+		"country": "Argentina"
+	},
+	{
+		"id": 4,
+		"name": "Cordoba",
+		"country": "Argentina"
+	},
+	{
+		"id": 5,
+		"name": "Caracas",
+		"country": "Venezuela"
+	},
+	{
+		"id": 6,
+		"name": "Maracaibo",
+		"country": "Venezuela"
+	},
+	{
+		"id": 7,
+		"name": "Quito",
+		"country": "Ecuador"
+	},
+	{
+		"id": 8,
+		"name": "Guayaquil",
+		"country": "Ecuador"
+	}
+]

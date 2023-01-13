@@ -1,0 +1,111 @@
+@import '../../Styles/Scsss/abstracts/variables';
+
+//plantilla de buscador
+.seeker{
+    margin-top: 82px;
+    height: 161px;
+    background: $linksColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $backGroundColor;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: fit-content;
+    .seekerInputs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // width: 80%;
+        flex-flow: wrap;
+        row-gap: 9px;
+        .inputPrimary{
+            cursor: pointer;
+            width: 422px;
+            outline: none;
+            border: none;
+        }
+    }
+}
+.seeker:hover{
+   .seekerTitle{
+    transition: transform 200ms;
+    transition: all 1s;
+    font-size: 31px;
+   }
+
+
+}
+
+.seekerTitle {
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.seekerInputs {
+    .react-datepicker__navigation {
+        scale: 0.7;
+    }
+}
+button.calendarInput {
+    border: none;
+}
+.calendarInput, .cityInput {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+.calendarIcon, .locationIcon {
+    margin: 0 10px;
+}
+.input {
+    box-shadow: $inputShadow;
+    height: 40px;
+}
+.inputPrimary {
+    color: #7F7F7F;
+}
+.calendarButton {
+    position: absolute;
+    /* position: relative; */
+    bottom: -50px;
+    /* top: 50px; */
+    right: 50px;
+}
+.react-datepicker-popper {
+    background-color: white;
+    padding-bottom: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 5px 5px;
+    top: 10px !important;
+}
+
+//Laptop
+@media only screen and (min-width: 821px) {
+    .seekerInputs {
+        column-gap: 10px;
+    }
+    .calendarInput, .cityInput {
+        width: 422px;
+    }
+}
+
+//Tablet
+@media only screen and (max-width: 1100px) and (min-width: 413px) {
+    .calendarInput, .cityInput {
+        width: 254px;
+    }
+    .seekerInputs {
+        column-gap: 20px;
+    }    
+}
+
+//Mobile
+@media only screen and (max-width: 412px) {
+    .calendarInput, .cityInput {
+        width: 300px;
+    }
+}

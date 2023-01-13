@@ -1,0 +1,106 @@
+[
+	{
+		"id": "1",
+		"image": "https://cdn.pixabay.com/photo/2019/03/08/20/14/kitchen-living-room-4043091_960_720.jpg",
+		"category": {
+			"id": "3",
+			"title": "Departamento",
+			"description": "Suele incluir un dormitorio, un cuarto de baño, una cocina y una entrada independiente solo para huéspedes",
+			"urlimage": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571460.jpg&fm=jpg"
+		},
+		"title": "Apartamento con acceso a gimnasio",
+		"location": "Medellin",
+		"description": "Ubicado a pocos kilómetros del centro de la ciudad, y con fácil acceso a transporte público"
+	},
+	{
+		"id": "2",
+		"image": "https://cdn.pixabay.com/photo/2016/12/06/14/33/log-cabin-1886620_960_720.jpg",
+		"category": {
+			"id": "2",
+			"title": "Cabaña",
+			"description": "Espacio ideal para compartir en familia y disfrutar de la naturaleza",
+			"urlimage": "https://images.pexels.com/photos/2360673/pexels-photo-2360673.jpeg?auto=compress&cs=tinysrgb&w=600"
+		},
+		"title": "Cabaña privada",
+		"location": "Bogotá",
+		"description": "Cabaña privada en ambiente campestre ubicada a las afueras de la ciudad, con fácil acceso a transporte público"
+	},
+	{
+		"id": "3",
+		"image": "https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_960_720.jpg",
+		"category": {
+			"id": "1",
+			"title": "Habitación compartida",
+			"description": "Los huéspedes duermen en una habitación o área común que podrían compartir con otras personas",
+			"urlimage": "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?cs=srgb&dl=pexels-m%26w-studios-90317.jpg&fm=jpg"
+		},
+		"title": "Habitación a 5 minutos de la Universidad Nacional",
+		"location": "Bogotá",
+		"description": "Habitación para dos estudiantes, cercana al campus de la Universidad Nacional"
+	},
+	{
+		"id": "4",
+		"image": "https://cdn.pixabay.com/photo/2018/07/20/18/01/colombia-3551191_960_720.jpg",
+		"category": {
+			"id": "4",
+			"title": "Casa",
+			"description": "Tendrás todo el espacio disponible para ti y tu familia",
+			"urlimage": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?cs=srgb&dl=pexels-binyamin-mellish-106399.jpg&fm=jpg"
+		},
+		"title": "Casa moderna en el centro histórico",
+		"location": "Cartagena",
+		"description": "La vida moderna se encuentra con el encanto de la ciudad antigua"
+	},
+	{
+		"id": "5",
+		"image": "https://images.pexels.com/photos/2030037/pexels-photo-2030037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"category": {
+			"id": "3",
+			"title": "Departamento",
+			"description": "Suele incluir un dormitorio, un cuarto de baño, una cocina y una entrada independiente solo para huéspedes",
+			"urlimage": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571460.jpg&fm=jpg"
+		},
+		"title": "Departamento en zona exclusiva",
+		"location": "Cali",
+		"description": "Ideal para acceder a las zonas más comerciales de la ciudad"
+	},
+	{
+		"id": "6",
+		"image": "https://cdn.pixabay.com/photo/2019/09/15/14/22/fishermans-hut-4478427_960_720.jpg",
+		"category": {
+			"id": "2",
+			"title": "Cabaña",
+			"description": "Espacio ideal para compartir en familia y disfrutar de la naturaleza",
+			"urlimage": "https://images.pexels.com/photos/2360673/pexels-photo-2360673.jpeg?auto=compress&cs=tinysrgb&w=600"
+		},
+		"title": "Cabaña con vista a lago",
+		"location": "Medellin",
+		"description": "Cabaña para siete personas, frente al lago, ideal para disfrutar del atardecer"
+	},
+	{
+		"id": "7",
+		"image": "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_960_720.jpg",
+		"category": {
+			"id": "1",
+			"title": "Habitación compartida",
+			"description": "Los huéspedes duermen en una habitación o área común que podrían compartir con otras personas",
+			"urlimage": "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?cs=srgb&dl=pexels-m%26w-studios-90317.jpg&fm=jpg"
+		},
+		"title": "Habitación compartida en finca",
+		"location": "Bogota",
+		"description": "La finca posee una casa en el árbol con habitación compartida, vista a la naturaleza, alimentada por energía solar"
+	},
+	{
+		"id": "8",
+		"image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+		"category": {
+			"id": "4",
+			"title": "Casa",
+			"description": "Tendrás todo el espacio disponible para ti y tu familia",
+			"urlimage": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?cs=srgb&dl=pexels-binyamin-mellish-106399.jpg&fm=jpg"
+		},
+		"title": "Casa en sector exclusivo de la ciudad",
+		"location": "Bucaramanga",
+		"description": "Vista maravillosa a todo el casco urbano del área metropolitana de Bucaramanga"
+	}
+]

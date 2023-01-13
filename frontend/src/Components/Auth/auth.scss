@@ -1,0 +1,67 @@
+@import './../../Styles/Scsss/abstracts/variables';
+
+.auth {
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card-register{
+            margin-top: 100px;
+            margin-bottom: 80px;
+            .tittle{
+                text-align: center;
+                color: $mainColor;
+                margin: 10px;
+            }
+            .container-button{
+            display: flex;
+            justify-content: center;
+    
+            }
+            .buttonPrimary{
+            margin-top: 20px;
+    
+            }
+            .go-to-register{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            column-gap: .3rem;
+            }
+        }
+        .card-login{
+            margin-top: 100px;
+            margin-bottom: 80px;
+        .tittle{
+            text-align: center;
+            color: $mainColor;
+            margin: 10px;
+        }
+        .container-button{
+        display: flex;
+        justify-content: center;
+
+        }
+        .buttonPrimary{
+        margin-top: 20px;
+
+        }
+        .go-to-register{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        column-gap: .3rem;
+        }
+        }
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 412px) {
+    .auth {
+        .body {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}

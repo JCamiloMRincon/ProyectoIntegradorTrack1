@@ -1,0 +1,100 @@
+@import './../../Styles/Scsss/abstracts/variables';
+@import './../../Styles/Scsss/abstracts/mixins';
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #DFE4EA;
+    padding: 40px;
+    @include mq(mob){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "dat dat res"
+        "cal cal res";
+    }
+    .dataBooking{
+        display: grid;
+        grid-template-rows: 40px 1fr;
+        order: 1;
+        @include mq(mob){
+            grid-area: dat;
+        }
+        .input-custom
+        {
+            background-color: #DFE4EA;
+        } 
+        .container{
+            margin: 0;
+            padding: 32px;
+            height: fit-content;
+            .data{
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: 1fr;
+                gap: 32px;
+            }
+        }
+    }
+    .detailBooking{
+        order: 3;
+        @include mq(mob){
+            grid-area: res;
+        }
+        .container{
+            margin: 0;
+
+            .mainImage{
+                .one{
+                    height: 300px;
+                    width: 100%;
+                }
+                .checkIn,
+                .checkOut{
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    border-top: 1px solid #BEBEBE;
+                    margin: 40px 0 0 0;
+                }
+
+                .checkOut{
+                    margin: 0 0 40px 0;
+                    border-bottom: 1px solid #BEBEBE;
+                }
+            }
+        }
+    }
+    .calendar-container{
+        width: 100%;
+        height: fit-content;
+        order: 2;
+        @include mq(lapS2){
+            grid-area: cal;
+        }
+        & > div{
+            height: 100%;
+        }
+        .react-datepicker{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            .react-datepicker__navigation{
+                background-color: #1DBEB4;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                &-icon{
+                    &:before{
+                        border-color: #ffffff;
+
+                    }
+                }
+            }
+        }
+       
+        
+    }
+}

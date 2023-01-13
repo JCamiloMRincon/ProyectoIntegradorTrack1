@@ -1,0 +1,43 @@
+@import './../../../Styles/Scsss/abstracts/variables';
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+.input-component{
+    margin-top: 5px;
+    .input-custom{
+        width: 100%;
+        height: 40px;
+        outline:unset;
+        border-radius:5px;
+        box-shadow: $boxShadow;
+        margin-top: 5px;
+        text-align:left ;
+        border: unset;
+        padding: 14px;
+        margin: 15px 0;
+    }
+    .input-custom:focus{
+        background-color: $backGroundColor;
+        color: $mainColor;
+        cursor:pointer ;
+       
+    }
+    .input-custom:hover{
+        background-color: $backGroundColor;
+        color: $mainColor;
+        cursor:pointer ;
+       
+    }
+    
+}
+
+
+.error {
+    color: red;
+    text-align: end;
+}

@@ -1,0 +1,13 @@
+@import './../../../Styles/Scsss/abstracts/variables';
+
+    .full-name{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;        
+    }
+@media only  screen and (max-width: 412px) and (min-width: 300px) {
+    .full-name{
+        display: flex;
+        flex-direction: column;       
+    }
+}

@@ -1,0 +1,16 @@
+@import './../../Styles/Scsss/abstracts/variables';
+
+
+.container{
+    margin: 150px 20px;  
+    padding: 20px;  
+    border: 1px solid $backGroundColor;
+    border-radius: 10px;
+    box-shadow: $boxShadow;
+    background-color: white;
+}
+.data{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+

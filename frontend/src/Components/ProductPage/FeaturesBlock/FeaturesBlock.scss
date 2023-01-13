@@ -1,0 +1,36 @@
+.features-block {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.features-list {
+    display: grid;
+    grid-template-rows: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    row-gap: 15px;
+}
+
+//Laptop
+@media only screen and (min-width: 821px) {
+    .features-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 38px;
+    }
+}
+
+//Tablet
+@media only screen and (max-width: 820px) and (min-width: 413px) {
+    .features-list {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 33px;
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 412px) and (min-width: 300px) {
+    .features-list {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 8px;
+    }
+}

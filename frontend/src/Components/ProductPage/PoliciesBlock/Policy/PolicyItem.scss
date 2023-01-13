@@ -1,0 +1,10 @@
+@import '../../../../Styles/Scsss/abstracts/extends';
+
+.policy-item {
+    & p {
+        @extend %p1;
+        color: $iconesColor;
+        opacity: 0.8;
+        padding: 8px 0px;
+    }
+}

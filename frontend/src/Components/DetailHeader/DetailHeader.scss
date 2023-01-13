@@ -1,0 +1,17 @@
+@import './../../Styles/Scsss/base/resets';
+
+
+.container-header{
+  padding: 10px 15px 5px;
+  background-color: $linksColor ;
+  width: 100%;
+  margin-top: 85px;
+
+}
+.deparments{
+  display: flex;
+  justify-content: space-between;
+}
+.tittle-deparments{
+  color: $backGroundColor;
+}

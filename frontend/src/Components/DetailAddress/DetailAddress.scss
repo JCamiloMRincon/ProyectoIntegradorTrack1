@@ -1,0 +1,12 @@
+@import './../../Styles/Scsss/abstracts/variables';
+
+.container-address{
+  background-color: $backGroundColor;
+  padding: 10px 15px 5px;
+  width: 100%;
+}
+.info-address{
+  display: flex;
+  justify-content: space-between;
+  color: $iconesColor;
+}

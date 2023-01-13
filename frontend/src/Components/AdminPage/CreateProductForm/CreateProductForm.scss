@@ -1,0 +1,231 @@
+@import '../../../Styles/Scsss/abstracts/variables';
+
+.createProductForm {
+    & h1 {
+        padding: 30px;
+    }
+}
+
+.form {
+    background-color: white;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #DFE4EA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.form-firstContainer {
+    & label {
+        display: flex;
+        /* margin: 10px; */
+        flex-flow: column;
+        // width: 600px;
+        width: auto;
+        height: auto;
+        margin: 10px;
+        &.textarea-label {
+            width: auto;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+    &__input {
+        // width: 600px;
+        height: 40px;
+        margin-top: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        border: none;
+        padding: 12px;
+    }
+    &::placeholder {
+        padding-left: 12px;
+    }
+    &__textarea {
+        padding: 12px;
+        height: 120px;
+        flex-grow: 2;
+        margin-top: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        border: none;
+        font-family: inherit;
+    }
+}
+
+.form-secondContainer {
+    display: grid;
+    background: rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    padding: 15px;
+    align-items: center;
+    & label {
+        width: auto;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__input {
+        // width: 600px;
+        height: 40px;
+        margin-top: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        border: none;
+        padding: 12px;
+    }
+    &__button {
+        height: 40px;
+        background-color: $mainColor;
+        color: white;
+        border: none;
+        font-size: xx-large;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    & input[type=checkbox] {
+        margin-right: 10px;
+    }
+}
+.form-thirdContainer {
+    display: grid;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px;
+    grid-row-gap: 40px;
+    align-items: center;
+    & label {
+        width: auto;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__textarea {
+        padding: 12px;
+        height: 200px;
+        width: 100%;
+        flex-grow: 2;
+        margin-top: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        border: none;
+        font-family: inherit;
+        display: flex;
+        flex-flow: column;
+    }
+    & input[type=checkbox] {
+        margin-right: 10px;
+    }
+}
+.form-fourthContainer {
+    display: grid;
+    background: rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    padding: 15px;
+    & label {
+        display: flex;
+        /* margin: 10px; */
+        flex-flow: column;
+        // width: 600px;
+        width: auto;
+        height: auto;
+        margin: 10px;
+    }
+    &__input {
+        // width: 600px;
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        border: none;
+        padding: 12px;
+    }
+    &__button {
+        height: 40px;
+        background-color: $mainColor;
+        color: white;
+        border: none;
+        font-size: xx-large;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.submit-button  {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+//Laptop
+@media only screen and (min-width: 821px) {
+}
+
+//Tablet
+@media only screen and (min-width: 426px) { 
+    .createProductForm {
+        margin: 80px 40px 80px 40px;
+    }
+    .form-firstContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .form-secondContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        & label {
+            margin-bottom: 30px;
+        }
+    }
+    .form-thirdContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        & label {
+            margin-bottom: 30px;
+        }
+    }
+    .form-fourthContainer {
+        grid-template-columns: 1fr 40px;
+        &__button {
+            position: relative;
+            top: 40px;
+        }
+    }
+    .submit-button  {
+        margin-top: 55px;
+        width: 50%;
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 412px) {
+    .createProductForm {
+        margin: 80px 0;
+    }
+    .form-secondContainer {
+        grid-template-columns: 1fr;
+        & label {
+            display: flex;
+            margin-bottom: 20px;
+        }
+    }
+    .form-thirdContainer {
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        & label {
+            display: flex;
+            margin-bottom: 20px;
+        }
+    }
+    .form-fourthContainer {
+        grid-template-columns: 1fr;
+        &__button {
+            margin: 20px;
+        }
+    }
+    .submit-button  {
+        width: 90%;
+        margin-top: 40px;
+    }
+}

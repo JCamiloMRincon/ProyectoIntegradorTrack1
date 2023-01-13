@@ -1,0 +1,17 @@
+@import '../../../../Styles/Scsss/abstracts/extends';
+
+.feature-item {
+    // min-width: 230px;
+    display: flex;
+}
+.feature-icon {
+    width: 20px;
+    height: 20px;
+}
+.feature-name {
+    display: inline-block;
+    padding-left: 8px;
+    @extend %p1;
+    color: $iconesColor;
+    opacity: 0.8;
+}

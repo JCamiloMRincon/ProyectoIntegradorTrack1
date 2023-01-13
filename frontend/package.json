@@ -1,0 +1,61 @@
+{
+  "name": "proyectointegrador",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://digitalbookingc2g10.ddns.net/",
+  "dependencies": {
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.1.3",
+    "date-and-time": "^2.4.1",
+    "date-fns": "^2.29.3",
+    "jwt-decode": "^3.1.2",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.2.0",
+    "react-gallery-carousel": "^0.3.0",
+    "react-router-dom": "^6.4.5",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.55.0",
+    "sweetalert2": "^11.4.8",
+    "sweetalert2-react-content": "^5.0.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build/ s3://0521ptc2n2-grupo10-bucket-s3-front",
+    "prod": "npm run build && npm run deploy"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "babel-jest": "^29.3.1",
+    "eslint-plugin-jest": "^27.1.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "jest-svg-transformer": "^1.0.0"
+  }
+}

@@ -1,0 +1,1001 @@
+{
+	"id": "43f928e0-1eb9-4e50-827b-1754f5a4d047",
+	"name": "PI_BackEnd",
+	"timestamp": "2022-12-13T19:06:32.943Z",
+	"collection_id": "18651900-f8d692eb-4654-43ae-8d87-9d613d207d60",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 47,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "dddd8251-aad8-4126-b29b-aeb9eb67d2fb",
+			"name": "Listar categorías",
+			"url": "http://localhost:8085/categorias",
+			"time": 1322,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validar que Departamento tenga id 3": true,
+				"Validar que Cabaña tenga id 2": true,
+				"Validar que Casa tenga id 4": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que Departamento tenga id 3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que Cabaña tenga id 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que Casa tenga id 4": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1322
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validar que Departamento tenga id 3": true,
+					"Validar que Cabaña tenga id 2": true,
+					"Validar que Casa tenga id 4": true
+				}
+			]
+		},
+		{
+			"id": "8d91ea1d-5fc7-42f9-9cd6-9878c07a5154",
+			"name": "Listar ciudades",
+			"url": "http://localhost:8085/ciudades",
+			"time": 1491,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validar que Bogotá tenga id 1": true,
+				"Response time is less than 2500ms": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que Bogotá tenga id 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1491
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validar que Bogotá tenga id 1": true,
+					"Response time is less than 2500ms": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "c566345e-c696-4f88-a095-3bb52ffe6e5a",
+			"name": "Listar paises",
+			"url": "http://localhost:8085/paises",
+			"time": 1106,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validar que Argentina tenga id 1": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que Argentina tenga id 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1106
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validar que Argentina tenga id 1": true
+				}
+			]
+		},
+		{
+			"id": "62e09ad1-7fa8-492b-90c6-49b123edb065",
+			"name": "Listar caracteristicas",
+			"url": "http://localhost:8085/caracteristicas",
+			"time": 1139,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validar que Wifi tenga id 1": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que Wifi tenga id 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1139
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validar que Wifi tenga id 1": true
+				}
+			]
+		},
+		{
+			"id": "ac117dae-0ba5-4a68-9e9b-146f06c074f6",
+			"name": "Listar politicas",
+			"url": "http://localhost:8085/politicas",
+			"time": 1648,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1648
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "06177238-cd5d-452e-9663-3af2d5402bf7",
+			"name": "Listar imagenes",
+			"url": "http://localhost:8085/imagenes",
+			"time": 5739,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5739
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "92492ec7-9059-4fb8-8553-b1b7cafd53fc",
+			"name": "Listar politicas/ tipos",
+			"url": "http://localhost:8085/politicas/tipos",
+			"time": 1111,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validar que Normas de la casa tenga id 1": true,
+				"Validar que Política de cancelación tenga id 2": true,
+				"Validar que Salud y seguridad tenga id 3": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que Normas de la casa tenga id 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que Política de cancelación tenga id 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que Salud y seguridad tenga id 3": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1111
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validar que Normas de la casa tenga id 1": true,
+					"Validar que Política de cancelación tenga id 2": true,
+					"Validar que Salud y seguridad tenga id 3": true
+				}
+			]
+		},
+		{
+			"id": "6816ffd7-ee66-411f-8719-27f023800040",
+			"name": "Listar productos",
+			"url": "http://localhost:8085/productos",
+			"time": 17588,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17588
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8f04e9fc-0119-489b-a7ee-568744c2e257",
+			"name": "Listar usuarios",
+			"url": "http://localhost:8085/usuarios",
+			"time": 2413,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validar que usuario Marisabel tenga id 1": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar que usuario Marisabel tenga id 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2413
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validar que usuario Marisabel tenga id 1": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "596bb7ed-41c1-4423-918c-1a521378b659",
+			"name": "Listar reservas",
+			"url": "http://localhost:8085/reservas",
+			"time": 2426,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2426
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1878d987-4ff9-4b97-82da-237d73796485",
+			"name": "Buscar categoría por id",
+			"url": "http://localhost:8085/categorias/1",
+			"time": 1111,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1111
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9ec2f645-012a-4b87-8531-58e35e9105a4",
+			"name": "Buscar producto por id",
+			"url": "http://localhost:8085/productos/4",
+			"time": 1673,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 3500": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 3500": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1673
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 3500": true
+				}
+			]
+		},
+		{
+			"id": "49bcfb8f-b343-416b-a8bd-3863fa019896",
+			"name": "Buscar producto por ciudad",
+			"url": "http://localhost:8085/productos/ciudad/1",
+			"time": 8516,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8516
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8f545632-95e3-4b0e-a15f-c3142e7ae896",
+			"name": "Buscar producto por categoría",
+			"url": "http://localhost:8085/productos/categoria/1",
+			"time": 8516,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8516
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "28f8e321-75ff-4195-aea6-adb7914b8c2b",
+			"name": "Buscar usuarios por ID",
+			"url": "http://localhost:8085/usuarios/2",
+			"time": 1658,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1658
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ce3692ca-1fab-4cd5-8bae-3d858da91a6a",
+			"name": "Listar reserva por ID de producto",
+			"url": "http://localhost:8085/reservas/producto/1",
+			"time": 1155,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1155
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "0a8a69e0-26f3-4497-a5c2-86fabcbd08c0",
+			"name": "Registrar categoría",
+			"url": "http://localhost:8085/categorias",
+			"time": 2432,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2432
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f9a1f5a2-3e9b-408b-a327-5cb93d215e35",
+			"name": "Registrar producto",
+			"url": "http://localhost:8085/productos",
+			"time": 12045,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12045
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "de937a0c-ade6-4ccf-b6d5-e426ceeb6372",
+			"name": "Registrar ciudad",
+			"url": "http://localhost:8085/ciudades",
+			"time": 2595,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2595
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "20316fed-d4a1-43a0-a540-ab87f0130b2a",
+			"name": "Registrar pais",
+			"url": "http://localhost:8085/paises",
+			"time": 2433,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2433
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2c539843-2da5-41b5-8b7e-dec5b3bae09f",
+			"name": "Registrar caracteristica",
+			"url": "http://localhost:8085/caracteristicas",
+			"time": 2443,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2443
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a1207477-dd4d-4b81-b5f2-08cb5b20f555",
+			"name": "Registrar politica",
+			"url": "http://localhost:8085/politicas",
+			"time": 2674,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2674
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "75ea349a-e964-4c80-bc8d-7c9ac7ced11d",
+			"name": "Registrar reserva",
+			"url": "http://localhost:8085/reservas",
+			"time": 4631,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4631
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1c03da7a-40c6-428f-93b2-7f09a3a806c6",
+			"name": "Login admin",
+			"url": "http://localhost:8085/login",
+			"time": 1211,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1211
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9ce8c7b4-746b-4892-bdb7-835b39f78b20",
+			"name": "Login usuario",
+			"url": "http://localhost:8085/login",
+			"time": 1735,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1735
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "975132dd-f6ff-4e00-b8c5-3920de501f5f",
+			"name": "Registrar usuario",
+			"url": "http://localhost:8085/usuarios",
+			"time": 4776,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4776
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "11f91095-c4e8-46e6-8920-79ae7a9df451",
+			"name": "Modificar categoría",
+			"url": "http://localhost:8085/categorias",
+			"time": 2210,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2210
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7dcec3e0-2535-4537-a659-3ce34040f99e",
+			"name": "Modificar producto",
+			"url": "http://localhost:8085/productos",
+			"time": 9217,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9217
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c04fbd6c-c808-4d09-aed0-c24cf7805ae7",
+			"name": "Eliminar categoría",
+			"url": "http://localhost:8085/categorias/43",
+			"time": 2436,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2436
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 109450,
+	"collection": {
+		"requests": [
+			{
+				"id": "dddd8251-aad8-4126-b29b-aeb9eb67d2fb",
+				"method": "GET"
+			},
+			{
+				"id": "8d91ea1d-5fc7-42f9-9cd6-9878c07a5154",
+				"method": "GET"
+			},
+			{
+				"id": "c566345e-c696-4f88-a095-3bb52ffe6e5a",
+				"method": "GET"
+			},
+			{
+				"id": "62e09ad1-7fa8-492b-90c6-49b123edb065",
+				"method": "GET"
+			},
+			{
+				"id": "ac117dae-0ba5-4a68-9e9b-146f06c074f6",
+				"method": "GET"
+			},
+			{
+				"id": "06177238-cd5d-452e-9663-3af2d5402bf7",
+				"method": "GET"
+			},
+			{
+				"id": "92492ec7-9059-4fb8-8553-b1b7cafd53fc",
+				"method": "GET"
+			},
+			{
+				"id": "6816ffd7-ee66-411f-8719-27f023800040",
+				"method": "GET"
+			},
+			{
+				"id": "8f04e9fc-0119-489b-a7ee-568744c2e257",
+				"method": "GET"
+			},
+			{
+				"id": "596bb7ed-41c1-4423-918c-1a521378b659",
+				"method": "GET"
+			},
+			{
+				"id": "1878d987-4ff9-4b97-82da-237d73796485",
+				"method": "GET"
+			},
+			{
+				"id": "9ec2f645-012a-4b87-8531-58e35e9105a4",
+				"method": "GET"
+			},
+			{
+				"id": "49bcfb8f-b343-416b-a8bd-3863fa019896",
+				"method": "GET"
+			},
+			{
+				"id": "8f545632-95e3-4b0e-a15f-c3142e7ae896",
+				"method": "GET"
+			},
+			{
+				"id": "28f8e321-75ff-4195-aea6-adb7914b8c2b",
+				"method": "GET"
+			},
+			{
+				"id": "ce3692ca-1fab-4cd5-8bae-3d858da91a6a",
+				"method": "GET"
+			},
+			{
+				"id": "0a8a69e0-26f3-4497-a5c2-86fabcbd08c0",
+				"method": "POST"
+			},
+			{
+				"id": "f9a1f5a2-3e9b-408b-a327-5cb93d215e35",
+				"method": "POST"
+			},
+			{
+				"id": "de937a0c-ade6-4ccf-b6d5-e426ceeb6372",
+				"method": "POST"
+			},
+			{
+				"id": "20316fed-d4a1-43a0-a540-ab87f0130b2a",
+				"method": "POST"
+			},
+			{
+				"id": "2c539843-2da5-41b5-8b7e-dec5b3bae09f",
+				"method": "POST"
+			},
+			{
+				"id": "a1207477-dd4d-4b81-b5f2-08cb5b20f555",
+				"method": "POST"
+			},
+			{
+				"id": "75ea349a-e964-4c80-bc8d-7c9ac7ced11d",
+				"method": "POST"
+			},
+			{
+				"id": "1c03da7a-40c6-428f-93b2-7f09a3a806c6",
+				"method": "POST"
+			},
+			{
+				"id": "9ce8c7b4-746b-4892-bdb7-835b39f78b20",
+				"method": "POST"
+			},
+			{
+				"id": "975132dd-f6ff-4e00-b8c5-3920de501f5f",
+				"method": "POST"
+			},
+			{
+				"id": "11f91095-c4e8-46e6-8920-79ae7a9df451",
+				"method": "PUT"
+			},
+			{
+				"id": "7dcec3e0-2535-4537-a659-3ce34040f99e",
+				"method": "PUT"
+			},
+			{
+				"id": "c04fbd6c-c808-4d09-aed0-c24cf7805ae7",
+				"method": "DELETE"
+			}
+		]
+	}
+}

@@ -1,0 +1,13 @@
+.errorBody {
+    margin-top: 30vh;
+    text-align: center;
+    & .status {
+        font-size: 100px;
+    }
+    & .title {
+        margin: 30px 0 20px 0;
+    }
+    & .url:hover {
+        color: #1dbeb4;
+    }
+}

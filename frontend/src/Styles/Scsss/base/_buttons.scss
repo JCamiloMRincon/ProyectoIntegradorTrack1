@@ -1,0 +1,45 @@
+@import '../abstracts/extends';
+
+.button-one {
+    @extend %blue-button;
+    height: 40px;
+    width: 206px;
+}
+
+.button-one:hover{
+    background-color: $backGroundColor;
+    color: $mainColor;
+    cursor:pointer ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button-two {
+    @extend %blue-button;
+    height: 40px;
+    width: 296px;
+}
+
+.button-three {
+    @extend %blue-button;
+    height: 40px;
+    width: 246px;
+}
+
+.button-four {
+    @extend %blue-button;
+    height: 40px;
+    width: 362px;
+}
+
+.button-five {
+    @extend %white-button;
+    height: 40px;
+    width: 206px;
+}
+
+.button-six {
+    @extend %white-button;
+    height: 40px;
+    width: 164px;
+}
+
